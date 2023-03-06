@@ -4,6 +4,7 @@ public static class BerlinClockConverter
 {
     public static BerlinClock ConvertDigitalTimeToBerlinClock(DateTime digitalTime)
     {
-        return new BerlinClock();
+        var singleMinuteRow = new SingleMinuteRow(LampState.Off, LampState.Off, LampState.Off, LampState.Off);
+        return new BerlinClock(singleMinuteRow);
     }
 }
